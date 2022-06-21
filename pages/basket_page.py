@@ -5,8 +5,8 @@ from .locators import BasketPageLocators
 class BasketPage(BasePage):     
     def should_not_be_any_product_in_basket(self):
         assert self.is_not_element_present(*BasketPageLocators.BASKET_CONTENT), \
-        "Product in basket is presented, but should not be"    
+            "Product in basket is presented, but should not be"
         
     def should_be_empty_basket_message(self):
         assert self.is_element_present(*BasketPageLocators.EMPTY_BASKET_MESSAGE), \
-        "Empty basket message is not presented"
+            "Empty basket message is not presented"

@@ -7,9 +7,11 @@ class BasePageLocators:
     BASKET_LINK = (By.CSS_SELECTOR, ".btn-group a.btn")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
+
 class BasketPageLocators:
     BASKET_CONTENT = (By.CSS_SELECTOR, "#content_inner .basket_summary")
     EMPTY_BASKET_MESSAGE = (By.CSS_SELECTOR, "#content_inner p")
+
 
 class MainPageLocators:
     pass
